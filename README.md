@@ -23,7 +23,12 @@ Add it in your root build.gradle at the end of repositories:
 	}
 ```
 
-#### Step 3. Just call WatchUtils.init(context) in your own Application:
+#### Step 3. Add permission
+
+add Read and write SDcard permissions
+
+
+#### Step 4. Just call WatchUtils.init(context) in your own Application:
 ``` groovy
 public class MyOwnApplication extends Application {
 
