@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WatchLib</string>
+    <string name="cancel">关闭</string>
+    <string name="config">确认</string>
 </resources>

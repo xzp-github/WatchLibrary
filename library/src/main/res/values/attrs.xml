@@ -7,4 +7,18 @@
         <attr name="border_color" format="color" />
     </declare-styleable>
 
+
+    <declare-styleable name="LeftRightView">
+        <attr name="leftBackground" format="reference"/>  <!--左边按钮背景-->
+        <attr name="leftImgSrc" format="reference"/>  <!--左边按钮图片模式下的icon-->
+        <attr name="leftText" format="string"/> <!--左边按钮文字模式下String-->
+        <attr name="rightBackground" format="reference"/> <!--右边按钮背景-->
+        <attr name="rightImgSrc" format="reference"/> <!--右边按钮图片模式下的icon-->
+        <attr name="rightText" format="string"/> <!--右边按钮文字模式下String-->
+        <attr name="leftRightType">  <!--定义按钮当前使用何种模式 图片或者文字-->
+            <enum name="text" value="0"/>
+            <enum name="img" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>
