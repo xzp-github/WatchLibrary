@@ -55,7 +55,7 @@ public class MyOwnApplication extends Application {
 
 * ### 圆形CircleImageView -> [参考][https://github.com/hdodenhof/CircleImageView]
 
-* ### 圆形RelativeLayout -> [CircularRelativeLayout][CircularRelativeLayout.java]
+* ### 圆形RelativeLayout -> [CircularRelativeLayout](./library/src/main/java/com/android/mltcode/watchlib/view/CircularRelativeLayout.java)
 
   ```
   getPrimaryDimension		
@@ -63,3 +63,5 @@ public class MyOwnApplication extends Application {
   ```
 
   
+
+[./library/src/main/java/com/android/mltcode/watchlib/view/CircularRelativeLayout.java]: 
