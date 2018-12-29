@@ -40,3 +40,26 @@ public class MyOwnApplication extends Application {
     ...
 }
 ```
+
+## APIs
+
+* ### Log相关  ->[Logger][Logger.java]
+
+  ```
+  init 			:初始化
+  d
+  i
+  e
+  w
+  ```
+
+* ### 圆形CircleImageView -> [参考][https://github.com/hdodenhof/CircleImageView]
+
+* ### 圆形RelativeLayout -> [CircularRelativeLayout][CircularRelativeLayout.java]
+
+  ```
+  getPrimaryDimension		
+  setPrimaryDimension		:根据高度或者宽度设置成正方形
+  ```
+
+  
