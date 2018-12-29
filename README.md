@@ -43,7 +43,7 @@ public class MyOwnApplication extends Application {
 
 ## APIs
 
-* ### Log相关  ->[Logger][Logger.java]
+* ### Log相关  ->[Logger](./library/src/main/java/com/android/mltcode/watchlib/config/Logger.java)
 
   ```
   init 			:初始化
@@ -53,7 +53,7 @@ public class MyOwnApplication extends Application {
   w
   ```
 
-* ### 圆形CircleImageView -> [参考][https://github.com/hdodenhof/CircleImageView]
+* ### 圆形CircleImageView -> [参考](https://github.com/hdodenhof/CircleImageView)
 
 * ### 圆形RelativeLayout -> [CircularRelativeLayout](./library/src/main/java/com/android/mltcode/watchlib/view/CircularRelativeLayout.java)
 
@@ -63,5 +63,3 @@ public class MyOwnApplication extends Application {
   ```
 
   
-
-[./library/src/main/java/com/android/mltcode/watchlib/view/CircularRelativeLayout.java]: 
