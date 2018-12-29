@@ -64,7 +64,7 @@ public class MyOwnApplication extends Application {
 
   
 
-* ## ### 月牙按钮 -> [LeftRightButton](./library/src/main/java/com/android/mltcode/watchlib/view/LeftRightButton.java)
+* ## 月牙按钮 -> [LeftRightButton](./library/src/main/java/com/android/mltcode/watchlib/view/LeftRightButton.java)
 
   | 属性                | 值说明                                                       |
   | ------------------- | ------------------------------------------------------------ |
