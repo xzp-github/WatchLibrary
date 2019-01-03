@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <com.android.mltcode.watchlib.view.CircleProgressBar
+        android:id="@+id/calorie_cpb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:antiAlias="true"
+        app:arcColors="@array/calorie_progress_colors"
+        app:arcWidth="@dimen/sport_chart_arc_width"
+        app:bgArcColor="@color/calorie_bgArcColor"
+        app:bgArcWidth="@dimen/sport_chart_arc_width" />
+
+    <com.android.mltcode.watchlib.view.CircleProgressBar
+        android:id="@+id/duration_cpb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        app:antiAlias="true"
+        app:arcColors="@array/sport_progress_colors"
+        app:arcWidth="@dimen/sport_chart_arc_width"
+        app:bgArcColor="@color/sport_bgArcColor"
+        app:bgArcWidth="@dimen/sport_chart_arc_width" />
+
+    <com.android.mltcode.watchlib.view.CircleProgressBar
+        android:id="@+id/stand_cpb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="80dp"
+        app:antiAlias="true"
+        app:arcColors="@array/stand_progress_colors"
+        app:arcWidth="@dimen/sport_chart_arc_width"
+        app:bgArcColor="@color/stand_bgArcColor"
+        app:bgArcWidth="@dimen/sport_chart_arc_width" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-light"
+        android:format12Hour="MM/dd"
+        android:format24Hour="MM/dd"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>

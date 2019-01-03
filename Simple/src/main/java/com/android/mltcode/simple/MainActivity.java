@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.android.mltcode.watchlib.config.Logger;
+import com.android.mltcode.watchlib.view.CircleProgressBar;
 import com.android.mltcode.watchlib.view.LeftRightButton;
+
+import java.util.Random;
 
 
 public class MainActivity extends Activity implements LeftRightButton.LeftRightListener {
@@ -14,6 +17,12 @@ public class MainActivity extends Activity implements LeftRightButton.LeftRightL
 
     private LeftRightButton mLeftRightButton;
     private TextView mTextView;
+
+    private CircleProgressBar mCalorieCpb;
+    private CircleProgressBar mDurationCpb;
+    private CircleProgressBar mStandCpb;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +31,12 @@ public class MainActivity extends Activity implements LeftRightButton.LeftRightL
 
         mLeftRightButton = findViewById(R.id.leftrightbutton);
         mLeftRightButton.setLeftRightListener(this);
+
+        mCalorieCpb = (CircleProgressBar) findViewById(R.id.calorie_cpb);
+        mDurationCpb = (CircleProgressBar) findViewById(R.id.duration_cpb);
+        mStandCpb = (CircleProgressBar) findViewById(R.id.stand_cpb);
+
+        setCircleValue();
     }
 
     public void onAction(View view) {
@@ -35,6 +50,7 @@ public class MainActivity extends Activity implements LeftRightButton.LeftRightL
         if(mTextView != null){
             mTextView.setText("onLeftClick");
         }
+        setCircleValue();
     }
 
     @Override
@@ -42,5 +58,22 @@ public class MainActivity extends Activity implements LeftRightButton.LeftRightL
         if(mTextView != null){
             mTextView.setText("onRightClick");
         }
+
+        setCircleValue();
     }
+
+    private void setCircleValue() {
+        if(mCalorieCpb != null){
+            mCalorieCpb.setValue((float) (Math.random()*100f));
+        }
+
+        if(mDurationCpb != null){
+            mDurationCpb.setValue((float) (Math.random()*100f));
+        }
+
+        if(mStandCpb != null){
+            mStandCpb.setValue((float) (Math.random()*100f));
+        }
+    }
+
 }

@@ -119,3 +119,68 @@ public class MyOwnApplication extends Application {
   
 
   ![如图所示](Simple/leftRightbtn.png)
+
+
+
+
+* ## 圆环进度条 -> [CircleProgressBar](./library/src/main/java/com/android/mltcode/watchlib/view/CircleProgressBar.java)
+
+  ```
+  isAntiAlias			 		:是否抗锯齿
+  getHint			     		:
+  setHint 		     		:设置提示语
+  getUnit 			 		:
+  setUnit				 		:设置单位
+  getValue			 		:
+  setValue			 		：设置当前进度值
+  getMaxValue			  	 	：
+  setMaxValue			  	 	：设置最大进度值
+  getPrecision		  	 	：
+  setPrecision		  	 	：设置精度
+  getGradientColors	   	 	：
+  setGradientColors	   		：
+  getAnimTime			   		：
+  setAnimTime			   		：动画时间
+  reset				   		：重置
+  ```
+
+  
+
+  | 属性名                        | 属性值                                                       |
+  | ----------------------------- | ------------------------------------------------------------ |
+  | app:antiAlias                 | boolean是否抗锯齿                                            |
+  | app:startAngle                | 圆弧起始角度，3点钟方向为0，顺时针递增，小于0或大于360进行取余 float |
+  | app:sweepAngle                | 圆弧度数  float                                              |
+  | app:animTime                  | 设置动画时间 integer                                         |
+  | app:maxValue                  | 绘制内容的数值 最大值  float                                 |
+  | app:value                     | 绘制内容的数值 当前值  float                                 |
+  | app:precision                 | 精度，默认为0                                                |
+  | app:valueSize                 |                                                              |
+  | app:valueColor                |                                                              |
+  | app:textOffsetPercentInRadius | 文字的偏移量。相对于圆半径而言，默认三分之一                 |
+  | app:percent                   |                                                              |
+  | app:hint                      | 绘制内容相应的提示语                                         |
+  | app:hintSize                  |                                                              |
+  | app:hintColor                 |                                                              |
+  | app:unit                      | 绘制内容的单位                                               |
+  | app:unitSize                  |                                                              |
+  | app:unitColor                 |                                                              |
+  | app:arcWidth                  | 圆弧宽度                                                     |
+  | app:arcColors                 | 圆弧颜色                                                     |
+  | app:bgArcColor                | 背景圆弧颜色，默认白色                                       |
+  | app:bgArcWidth                | 背景圆弧宽度                                                 |
+
+  ```
+  <com.android.mltcode.watchlib.view.CircleProgressBar
+          android:id="@+id/duration_cpb"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="40dp"
+          app:antiAlias="true"
+          app:arcColors="@array/sport_progress_colors"
+          app:arcWidth="@dimen/sport_chart_arc_width"
+          app:bgArcColor="@color/sport_bgArcColor"
+          app:bgArcWidth="@dimen/sport_chart_arc_width" />
+  ```
+
+  

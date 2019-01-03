@@ -8,6 +8,7 @@
     </declare-styleable>
 
 
+    <!--月牙按钮-->
     <declare-styleable name="LeftRightView">
         <attr name="leftBackground" format="reference"/>  <!--左边按钮背景-->
         <attr name="leftImgSrc" format="reference"/>  <!--左边按钮图片模式下的icon-->
@@ -19,6 +20,46 @@
             <enum name="text" value="0"/>
             <enum name="img" value="1"/>
         </attr>
+    </declare-styleable>
+
+
+    <!-- 圆形进度条 -->
+    <declare-styleable name="CircleProgressBar">
+        <!-- 是否开启抗锯齿 -->
+        <attr name="antiAlias" format="boolean" />
+        <!-- 圆弧起始角度，3点钟方向为0，顺时针递增，小于0或大于360进行取余 -->
+        <attr name="startAngle" format="float" />
+        <!-- 圆弧度数 -->
+        <attr name="sweepAngle" format="float" />
+        <!-- 设置动画时间 -->
+        <attr name="animTime" format="integer" />
+        <!-- 绘制内容的数值 -->
+        <attr name="maxValue" format="float" />
+        <attr name="value" format="float" />
+        <!-- 精度，默认为0 -->
+        <attr name="precision" format="integer" />
+        <attr name="valueSize" format="dimension" />
+        <attr name="valueColor" format="color|reference" />
+        <!-- 文字的偏移量。相对于圆半径而言，默认三分之一 -->
+        <attr name="textOffsetPercentInRadius" format="float" />
+        <attr name="percent" format="float" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" format="string|reference" />
+        <attr name="hintSize" format="dimension" />
+        <attr name="hintColor" format="color|reference" />
+        <!-- 绘制内容的单位 -->
+        <!-- 绘制内容的单位 -->
+        <attr name="unit" format="string|reference" />
+        <attr name="unitSize" format="dimension" />
+        <attr name="unitColor" format="color|reference" />
+        <!-- 圆弧宽度 -->
+        <attr name="arcWidth" format="dimension" />
+        <!-- 圆弧颜色， -->
+        <attr name="arcColors" format="color|reference" />
+        <!-- 背景圆弧颜色，默认白色 -->
+        <attr name="bgArcColor" format="color|reference" />
+        <!-- 背景圆弧宽度 -->
+        <attr name="bgArcWidth" format="dimension" />
     </declare-styleable>
 
 </resources>

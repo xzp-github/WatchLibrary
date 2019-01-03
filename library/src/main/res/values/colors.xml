@@ -2,4 +2,26 @@
 <resources>
     <color name="black">@android:color/black</color>
     <drawable name="black_bg">@color/black</drawable>
+
+    <color name="calorie_arcColor">#E30576</color>
+    <color name="calorie_bgArcColor">#450123</color>
+    <color name="sport_arcColor">#8CC227</color>
+    <color name="sport_bgArcColor">#304D00</color>
+    <color name="stand_arcColor">#0885CE</color>
+    <color name="stand_bgArcColor">#02283E</color>
+
+
+
+    <integer-array name="calorie_progress_colors">
+        <item>@color/calorie_arcColor</item>
+    </integer-array>
+
+    <integer-array name="sport_progress_colors">
+        <item>@color/sport_arcColor</item>
+    </integer-array>
+
+    <integer-array name="stand_progress_colors">
+        <item>@color/stand_arcColor</item>
+    </integer-array>
+
 </resources>
