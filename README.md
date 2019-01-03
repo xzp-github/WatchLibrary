@@ -183,4 +183,4 @@ public class MyOwnApplication extends Application {
           app:bgArcWidth="@dimen/sport_chart_arc_width" />
   ```
 
-  
+  ![如图所示](Simple/circle_progresss.png)
