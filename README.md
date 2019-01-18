@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
 ``` groovy
 	dependencies {
 		...
-	        implementation 'com.github.xzp-github:WatchLibrary:v1.0.0'
+	        implementation 'com.github.xzp-github:WatchLibrary:v1.0.1'
 	}
 ```
 
