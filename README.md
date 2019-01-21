@@ -55,12 +55,21 @@ public class MyOwnApplication extends Application {
 
 * ### 圆形CircleImageView -> [参考](https://github.com/hdodenhof/CircleImageView)
 
-* ### 圆形RelativeLayout -> [CircularRelativeLayout](./library/src/main/java/com/android/mltcode/watchlib/view/CircularRelativeLayout.java)
-
+* ### 圆形RelativeLayout -> [RCRelativeLayout](./library/src/main/java/com/android/mltcode/watchlib/view/RCRelativeLayout.java)
   ```
-  getPrimaryDimension		
-  setPrimaryDimension		:根据高度或者宽度设置成正方形
+  CircularRelativeLayout已过时
   ```
+| 属性名称                      | 摘要      | 是否必须设置 | 类型      |
+| ------------------------- | ------- | ------ | ------- |
+| round_corner              | 总体圆角半径  | 否      | dp      |
+| round_corner_top_left     | 左上角圆角半径 | 否      | dp      |
+| round_corner_top_right    | 右上角圆角半径 | 否      | dp      |
+| round_corner_bottom_left  | 左下角圆角半径 | 否      | dp      |
+| round_corner_bottom_right | 右下角圆角半径 | 否      | dp      |
+| round_as_circle           | 是否剪裁为圆形 | 否      | boolean |
+| stroke_width              | 描边半径    | 否      | dp      |
+| stroke_color              | 描边颜色    | 否      | color   |
+| clip_background           | 剪裁背景    | 否      | boolean |
 
   
 

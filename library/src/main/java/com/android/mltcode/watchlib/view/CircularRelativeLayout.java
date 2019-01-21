@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
+ * @deprecated Suggested Use RCRelativeLayout.java<p/>
  * It is a Relative Layout clipped into a circle or an ellipse depending upon it's width and height.
  *
  * It also provides functionality to set width and height equal in case of match_parent
