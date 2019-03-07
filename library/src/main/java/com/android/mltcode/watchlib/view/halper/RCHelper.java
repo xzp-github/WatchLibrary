@@ -119,11 +119,11 @@ public class RCHelper {
             float d = areas.width() >= areas.height() ? areas.height() : areas.width();
             float r = d / 2;
             PointF center = new PointF(w / 2, h / 2);
-            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.O_MR1) {
+            /*if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.O_MR1) {
                 mClipPath.addCircle(center.x, center.y, r, Path.Direction.CW);
                 mClipPath.moveTo(0, 0);  // 通过空操作让Path区域占满画布
                 mClipPath.moveTo(w, h);
-            } else {
+            } else */{
                 float y = h / 2 - r;
                 mClipPath.moveTo(areas.left, y);
                 mClipPath.addCircle(center.x, y + r, r, Path.Direction.CW);
@@ -153,10 +153,10 @@ public class RCHelper {
         mPaint.setColor(Color.WHITE);
         mPaint.setStyle(Paint.Style.FILL);
 
-        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.O_MR1) {
+        /*if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.O_MR1) {
             mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
             canvas.drawPath(mClipPath, mPaint);
-        } else {
+        } else */{
             mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
 
             final Path path = new Path();
