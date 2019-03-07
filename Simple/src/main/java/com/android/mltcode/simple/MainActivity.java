@@ -27,9 +27,9 @@ public class MainActivity extends Activity implements LeftRightButton.LeftRightL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTextView = findViewById(R.id.tv_text);
+        mTextView = (TextView) findViewById(R.id.tv_text);
 
-        mLeftRightButton = findViewById(R.id.leftrightbutton);
+        mLeftRightButton = (LeftRightButton) findViewById(R.id.leftrightbutton);
         mLeftRightButton.setLeftRightListener(this);
 
         mCalorieCpb = (CircleProgressBar) findViewById(R.id.calorie_cpb);
