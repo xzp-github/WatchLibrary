@@ -24,9 +24,13 @@ public final class Logger {
     private static final String LOG = "log";
 
     public static void init(Context context) {
+        boolean isWriteLog = false;
         Config config = readConfig(context);
-        isDebug = config.isDebug;
-        ConfigUtil.init(context, config.isWriteLog);
+		if(config != null){
+			isDebug = config.isDebug;
+			isWriteLog = config.isWriteLog;
+		}
+        ConfigUtil.init(context, isWriteLog);
     }
 
     public static void d(String tag, String content) {
