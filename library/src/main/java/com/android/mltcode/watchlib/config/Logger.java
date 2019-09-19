@@ -61,7 +61,7 @@ public final class Logger {
         ConfigUtil.LogWirte(LOG, "w  +" + tag + " :" + content);
     }
 
-    private static Config readConfig(Context context) {
+    public static Config readConfig(Context context) {
         PackageManager pm = context.getPackageManager();
         if (PackageManager.PERMISSION_GRANTED != pm.checkPermission(
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
